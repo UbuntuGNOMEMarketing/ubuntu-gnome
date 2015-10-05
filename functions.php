@@ -1,8 +1,5 @@
 <?php
 /**
- * This is child themes functions.php file. All modifications should be made in this file.
- *
- * All style changes should be in child themes style.css file.
  *
  * @package    Polymer
  * @version    0.3

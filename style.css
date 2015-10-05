@@ -106,7 +106,6 @@ textarea,
 /* Primary and secondary menu styles in larger screens. */
 @media only screen and (min-width: 800px) {
 
-
 	#menu-primary ul ul {
 		top: 51px;
 	}
