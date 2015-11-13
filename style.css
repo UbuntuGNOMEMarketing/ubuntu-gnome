@@ -1,5 +1,5 @@
 /**
- * Theme Name: ubuntugnome
+ * Theme Name: Ubuntu GNOME
  * Theme URI: http://magikpress.com/themes/ubuntugnome
  * Description: A Child Theme for Stargazer inpired by material design
  * Version: 0.3.1
@@ -25,7 +25,7 @@ h5,
 h6,
 #site-title {
 	font-weight: 300;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Cantarell', sans-serif;
 }
 
 .font-primary,
@@ -37,7 +37,7 @@ textarea,
 .required,
 #site-description,
 #reply-title small {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Cantarell', sans-serif;
 	font-weight: 300;
 }
 
@@ -57,7 +57,7 @@ textarea,
 }
 
 #site-description {
-	font-family: 'Roboto Condensed', serif;
+	font-family: 'Cantarell', serif;
 	font-style: none;
 }
 

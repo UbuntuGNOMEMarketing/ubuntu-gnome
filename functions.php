@@ -16,7 +16,7 @@
 
 /* Adds the child theme setup function to the 'after_setup_theme' hook. */
 add_action( 'after_setup_theme', 'ubuntugnome_theme_setup', 11 );
-add_action( 'after_setup_theme', 'ubuntugnome_unregister_default_headers', 16 );
+add_action( 'after_setup_theme', 'ubuntugnome_unregister_things', 16 );
 
 include_once('inc/colors.php');
 
@@ -68,16 +68,36 @@ function ubuntugnome_theme_setup() {
 	/* Add custom stylesheets. */
 	add_action( 'wp_enqueue_scripts', 'ubuntugnome_enqueue_styles' );
 
+
+    /* Theme layouts. */
+	add_theme_support(
+		'theme-layouts',
+		array(
+			'1c'        => __( '1 Column Wide',                'stargazer' )
+		),
+		array( 'default' => '1c' )
+	);
+
+
+    /* Post formats. */
+	add_theme_support(
+		'post-formats',
+		array( 'aside', 'gallery', 'video' )
+	);
+
 }
 
-function ubuntugnome_unregister_default_headers() {
-		/**
-	 * Un-Register default Parent Theme headers for the child theme.
-	 * @since 0.1
-	 */
+function ubuntugnome_unregister_things() {
+  /**
+  * Un-Register default Parent Theme headers for the child theme.
+  * @since 0.1
+  */
   unregister_default_headers(
 	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
   );
+
+  /* Unregister primary menu */
+  unregister_nav_menu( 'primary' );
 }
 
 /**
@@ -100,6 +120,6 @@ function ubuntugnome_primary_color( $color ) {
 * @return void
 */
 function ubuntugnome_enqueue_styles() {
-	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic');
+	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Cantarell:400,300,700,400italic');
 	wp_enqueue_style( 'googleFonts');
 }
