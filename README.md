@@ -1,5 +1,5 @@
 ## Ubuntu GNOME WordPress theme
-A Child Theme for Hybrid Core's Stargazer, built specially for Ubuntu GNOME'sofficial website.
+A Child Theme for Hybrid Core's Stargazer, built specially for Ubuntu GNOME's official website.
 
 
 ###Credits

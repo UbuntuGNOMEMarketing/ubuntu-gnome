@@ -15,10 +15,153 @@
  /* Based on Kepler theme https://wordpress.org/themes/kepler */
  /* Thanks to Justin Tadlock, Sami Keijonen, and Ruairi Phelan. I have literally tweaked their code, even this sentence */
 
+
+/* Typographical Elements
+--------------------------------------------- */
+
 body {
+	background-color: #ffffff;
+	color: #555;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.625;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
     border: none;
+}
+
+.font-primary,
+body,
+input,
+textarea,
+.label-checkbox,
+.label-radio,
+.required,
+#site-description,
+#reply-title small {
     font-family: 'Cantarell', sans-serif;
 }
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: #555;
+	color: #fff;
+}
+
+::selection {
+	background-color: #555;
+	color: #fff;
+}
+
+a {
+	color: #0087ed;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #555;
+}
+
+p {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 40px;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-headlines {
+	color: #555;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+/* Structure */
 
 .container,
 .main {
@@ -55,48 +198,15 @@ body {
     padding: 2rem 0;
 }
 
-.font-headlines,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#site-title {
-	font-weight: 300;
-
-}
-
-.font-primary,
-body,
-input,
-textarea,
-.label-checkbox,
-.label-radio,
-.required,
-#site-description,
-#reply-title small {
-	font-weight: 300;
-}
-
-.widget-title > .wrap,
-#reply-title > .wrap,
-#comments-number > .wrap { font-weight: 400; }
 
 /* Container color. */
-#container > .wrap    {
+#container {
 	background: #fff;
-	background: rgba( 255,255,255,0.95 );
 }
 
 #site-title {
 	font-size: 2rem;
 	font-weight: 400;
-}
-
-#site-description {
-	font-family: 'Cantarell', serif;
-	font-style: none;
 }
 
 .header-image {
@@ -109,6 +219,7 @@ textarea,
     box-shadow: inset 0 1px 0 0 #d9d9d9;
     color: #787878;
     font-weight: 400;
+    font-size: 16px;
     padding: 60px 0;
 }
 
