@@ -71,7 +71,7 @@ function ubuntugnome_theme_setup() {
 	add_theme_support(
 		'theme-layouts',
 		array(
-			'1c'        => __( '1 Column Wide',                'stargazer' )
+			'1c'        => __( '1 Column Wide', 'stargazer' )
 		),
 		array( 'default' => '1c' )
 	);
@@ -86,19 +86,21 @@ function ubuntugnome_theme_setup() {
 }
 
 function ubuntugnome_unregister_things() {
-  /**
-  * Un-Register default Parent Theme headers for the child theme.
-  * @since 0.1
-  */
-  unregister_default_headers(
-	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
-  );
+    /**
+    * Un-Register default Parent Theme headers for the child theme.
+    * @since 0.1
+    */
+    unregister_default_headers(
+      array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
+    );
 
-  /* Unregister primary menu */
-  unregister_nav_menu( 'primary' );
+    /* Unregister primary menu */
+    unregister_nav_menu( 'primary' );
 
-  /* Unregister sidebars */
-  unregister_sidebar( 'primary');
+    /* Unregister sidebars */
+    unregister_sidebar( 'primary');
+    unregister_sidebar( 'subsidiary');
+
 }
 
 /**

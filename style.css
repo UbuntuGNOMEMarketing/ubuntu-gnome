@@ -16,43 +16,43 @@
  /* Thanks to Justin Tadlock, Sami Keijonen, and Ruairi Phelan. I have literally tweaked their code, even this sentence */
 
 body {
-  border: none;
+    border: none;
+    font-family: 'Cantarell', sans-serif;
 }
 
 .container,
 .main {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .custom-background #header,
-.custom-background #main,
-.custom-background #sidebar-subsidiary {
-  padding-left: 0;
-  padding-right: 0;
+.custom-background #main {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #header,
 .display-header-text #header {
-  background: rgba(0,0,0,0.8);
-  color: #fff;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  border: none;
-  box-shadow: none;
-  z-index: 9999;
+    background: RGBA(45, 51, 53, 0.95);
+    color: #fff;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    z-index: 9999;
 }
 
 #header #branding,
 #header #menu-secondary {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #header #menu-secondary .menu-items >li >a {
-  color: #fff;
-  padding: 2rem 0;
+    color: #fff;
+    padding: 2rem 0;
 }
 
 .font-headlines,
@@ -64,7 +64,7 @@ h5,
 h6,
 #site-title {
 	font-weight: 300;
-	font-family: 'Cantarell', sans-serif;
+
 }
 
 .font-primary,
@@ -76,7 +76,6 @@ textarea,
 .required,
 #site-description,
 #reply-title small {
-	font-family: 'Cantarell', sans-serif;
 	font-weight: 300;
 }
 
@@ -85,7 +84,7 @@ textarea,
 #comments-number > .wrap { font-weight: 400; }
 
 /* Container color. */
-#container > .wrap  {
+#container > .wrap    {
 	background: #fff;
 	background: rgba( 255,255,255,0.95 );
 }
@@ -105,6 +104,44 @@ textarea,
 }
 
 
+#footer {
+    background: #f2f2f2;
+    box-shadow: inset 0 1px 0 0 #d9d9d9;
+    color: #787878;
+    font-weight: 400;
+    padding: 60px 0;
+}
+
+#footer p {
+    margin-bottom: 10px;
+}
+
+#footer .footer-widget {
+    float: left;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+
+#footer .footer-widget:last-of-type {
+    padding-right: 0;
+}
+
+#footer .footer-widget-1 {
+    width: 16%;
+    text-align: center;
+}
+
+#footer .footer-widget-2 {
+    width: 20%;
+}
+
+#footer .footer-widget-3 {
+    width: 34%;
+}
+
+#footer .footer-widget-4 {
+    width: 30%;
+}
 
 /* Primary and secondary menu styles in narrow screen. */
 @media screen and (max-width: 799px) {
@@ -120,7 +157,7 @@ textarea,
 		top: 51px;
 	}
 	#menu-secondary ul ul {
-		top: 40px;
+		top: 64px;
 	}
 
 	#menu-primary ul ul li a:hover,

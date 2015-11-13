@@ -1,26 +1,41 @@
           </div><!-- #main -->
 
-          <?php hybrid_get_sidebar( 'subsidiary' ); // Loads the sidebar/subsidiary.php template. ?>
-
       </div><!-- .wrap -->
 
       <footer <?php hybrid_attr( 'footer' ); ?>>
 
-          <div class="wrap">
+          <div class="container">
 
-              <?php hybrid_get_menu( 'social' ); // Loads the menu/social.php template. ?>
+              <div class="footer-widget footer-widget-1 footer-logo">
 
-              <p class="credit">
-                  <?php printf(
-                      /* Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
-                      __( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'stargazer' ),
-                      date_i18n( 'Y' ), hybrid_get_site_link(), hybrid_get_wp_link(), hybrid_get_theme_link()
-                  ); ?>
-              </p><!-- .credit -->
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Ubuntu_GNOME_logo.png" alt="Ubuntu GNOME logo" />
 
+              </div>
 
+              <div class="footer-widget footer-widget-2 footer-icons">
 
-		</footer><!-- #footer -->
+                  <p>Content licensed under:</p>
+                  <p>Icons here</p>
+
+              </div>
+
+              <div class="footer-widget footer-widget-3 footer-text">
+
+                  <p>Ubuntu is a trademark of Canonical</p>
+                  <p>GNOME is a trademark of GNOME Foundation.</p>
+                  <p>Used by permission.</p>
+
+              </div>
+
+              <div class="footer-widget footer-widget-4 footer-icons">
+
+                  <p>Social icons</p>
+
+              </div>
+
+          </div>
+
+      </footer><!-- #footer -->
 
 	</div><!-- #container -->
 
