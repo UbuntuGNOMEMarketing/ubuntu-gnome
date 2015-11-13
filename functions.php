@@ -54,8 +54,6 @@ add_theme_support( 'custom-header', array(
 	'flex-height'     => true,
 ) );
 
-//* Add support for custom background
-add_theme_support( 'custom-background' );
 
 //* Remove the secondary sidebar
 unregister_sidebar( 'sidebar-alt' );

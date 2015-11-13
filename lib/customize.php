@@ -51,7 +51,7 @@ class Child_UbuntuGnome_Image_Control extends WP_Customize_Image_Control {
 	$images = apply_filters( 'ubuntu-gnome_images', array( '1' ) );
 	
 	$wp_customize->add_section( 'ubuntu-gnome-settings', array(
-		'title'    => __( 'Background Images', 'ubuntu-gnome' ),
+		'title'    => __( 'Child theme settings', 'ubuntu-gnome' ),
 		'priority' => 35,
 	) );
 
