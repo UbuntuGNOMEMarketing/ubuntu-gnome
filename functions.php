@@ -96,6 +96,9 @@ function ubuntugnome_unregister_things() {
 
   /* Unregister primary menu */
   unregister_nav_menu( 'primary' );
+
+  /* Unregister sidebars */
+  unregister_sidebar( 'primary');
 }
 
 /**
