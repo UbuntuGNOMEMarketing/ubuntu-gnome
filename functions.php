@@ -18,8 +18,6 @@
 add_action( 'after_setup_theme', 'ubuntugnome_theme_setup', 11 );
 add_action( 'after_setup_theme', 'ubuntugnome_unregister_things', 16 );
 
-include_once('inc/colors.php');
-
 /**
  * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove
  * filters and actions after the parent theme has been set up.  This function provides you that opportunity.
