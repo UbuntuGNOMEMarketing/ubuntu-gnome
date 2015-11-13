@@ -15,6 +15,19 @@
  /* Based on Kepler theme https://wordpress.org/themes/kepler */
  /* Thanks to Justin Tadlock, Sami Keijonen, and Ruairi Phelan. I have literally tweaked their code, even this sentence */
 
+.container,
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-background #header,
+.custom-background #main,
+.custom-background #sidebar-subsidiary {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 
 .font-headlines,
 h1,
@@ -62,44 +75,15 @@ textarea,
 }
 
 .header-image {
-	box-shadow: 0px 6px 15px -6px rgba(0, 0, 0, 0.5);
+
 }
 
-/* Primary menu color in all screen sizes. */
-#menu-primary,
-#menu-primary .search-form > div,
-#footer,
-.audio-shortcode-wrap,
-.media-shortcode-extend .media-info,
-.media-info-toggle,
-.entry-content .media-info-toggle,
-.media-info-toggle:hover,
-.media-info-toggle:focus,
-.wp-audio-shortcode.mejs-container,
-.mejs-controls,
-.mejs-volume-button .mejs-volume-slider,
-.mejs-overlay-play .mejs-overlay-button:after,
-.mejs-time-rail .mejs-time-float,
-.wp-playlist-dark {
-	color: #fafafa;
-	box-shadow: 0 3px 12px 0px rgba(0,0,0,0.35);
-}
+
 
 /* Primary and secondary menu styles in narrow screen. */
 @media screen and (max-width: 799px) {
 
-	.custom-background #container > .wrap {
-		margin-top: 0;
-	}
 
-	#menu-primary li a:hover,
-	#menu-primary li a:active,
-	#menu-primary li a:focus,
-	#menu-secondary li a:hover,
-	#menu-secondary li a:active,
-	#menu-secondary li a:focus {
-		box-shadow: inset 0 0 80px rgba(0,0,0,0.1);
-	}
 
 }
 
@@ -126,11 +110,7 @@ textarea,
 	box-shadow: 0 0px 16px 0px rgba(0,0,0,0.1);
 }
 
-#main,
-#sidebar-subsidiary {
-	box-shadow: 0 5px 16px 0px rgba(0,0,0,0.1);
-	font-weight: 300;
-}
+
 
 
 #menu-social li a::before {
