@@ -7,7 +7,7 @@
  * @access public
  * @return void
  */
-function polymer_wp_head_callback() {
+function ubuntugnome_wp_head_callback() {
 
 	$stylesheet = get_stylesheet();
 
@@ -20,7 +20,7 @@ function polymer_wp_head_callback() {
 		return;
 	}
 
-	$style = polymer_get_primary_styles();
+	$style = ubuntugnome_get_primary_styles();
 
 	/* Put the final style output together. */
 	$style = "\n" . '<style type="text/css" id="custom-colors-css-2">' . trim( $style ) . '</style>' . "\n";
@@ -39,7 +39,7 @@ function polymer_wp_head_callback() {
  * @access public
  * @return string
  */
-function polymer_get_primary_styles() {
+function ubuntugnome_get_primary_styles() {
 
 	$style = '';
 
@@ -128,19 +128,19 @@ function polymer_get_primary_styles() {
  * @access public
  * @return void
  */
-function polymer_cache_delete() {
+function ubuntugnome_cache_delete() {
 	wp_cache_delete( get_stylesheet() . '_custom_colors_2' );
 }
 
 
 /* Output CSS into <head>. */
-add_action( 'wp_head', 'polymer_wp_head_callback' );
+add_action( 'wp_head', 'ubuntugnome_wp_head_callback' );
 
 /* Delete the cached data for this feature. */
-add_action( 'update_option_theme_mods_' . get_stylesheet(), 'polymer_cache_delete' );
+add_action( 'update_option_theme_mods_' . get_stylesheet(), 'ubuntugnome_cache_delete' );
 
 /* Visual editor colors */
-function polymer_customizer_live_preview() {
-	wp_enqueue_script( 'polymer-themecustomizer', get_stylesheet_directory_uri().'/js/theme-customizer.js', array( 'jquery','customize-preview' )	);
+function ubuntugnome_customizer_live_preview() {
+	wp_enqueue_script( 'ubuntugnome-themecustomizer', get_stylesheet_directory_uri().'/js/theme-customizer.js', array( 'jquery','customize-preview' )	);
 }
-add_action( 'customize_preview_init', 'polymer_customizer_live_preview' );
+add_action( 'customize_preview_init', 'ubuntugnome_customizer_live_preview' );

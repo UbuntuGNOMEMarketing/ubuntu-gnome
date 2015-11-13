@@ -1,4 +1,4 @@
-##Polymer
+##ubuntugnome
 A Child Theme for Hybrid Core's Stargazer, inspired by colours from Material design by Google.
 
 

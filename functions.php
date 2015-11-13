@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * @package    Polymer
+ * @package    ubuntugnome
  * @version    0.3
  * @author     Gaurav Pareek <grv@magikpress.com>
  * @copyright  Copyright (c) 2014, Gaurav Pareek
@@ -10,13 +10,13 @@
  * @author     Justin Tadlock <justin@justintadlock.com>
  * @copyright  Copyright (c) 2013, Justin Tadlock
 
- * @link       http://magikpress.com/themes/polymer
+ * @link       http://magikpress.com/themes/ubuntugnome
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 /* Adds the child theme setup function to the 'after_setup_theme' hook. */
-add_action( 'after_setup_theme', 'polymer_theme_setup', 11 );
-add_action( 'after_setup_theme', 'polymer_unregister_default_headers', 16 );
+add_action( 'after_setup_theme', 'ubuntugnome_theme_setup', 11 );
+add_action( 'after_setup_theme', 'ubuntugnome_unregister_default_headers', 16 );
 
 include_once('inc/colors.php');
 
@@ -28,7 +28,7 @@ include_once('inc/colors.php');
  * @access public
  * @return void
  */
-function polymer_theme_setup() {
+function ubuntugnome_theme_setup() {
 
 	/* Change default background color. */
 	add_theme_support(
@@ -57,20 +57,20 @@ function polymer_theme_setup() {
 				'url'           => '%2$s/images/headers/material1.jpg',
 				'thumbnail_url' => '%2$s/images/headers/material1-thumb.jpg',
 				/* Translators: Header image description. */
-				'description'   => __( 'Material1', 'polymer' )
+				'description'   => __( 'Material1', 'ubuntugnome' )
 			)
 		)
 	);
 
 	/* Change primary color. */
-	add_filter( 'theme_mod_color_primary', 'polymer_primary_color' );
+	add_filter( 'theme_mod_color_primary', 'ubuntugnome_primary_color' );
 
 	/* Add custom stylesheets. */
-	add_action( 'wp_enqueue_scripts', 'polymer_enqueue_styles' );
+	add_action( 'wp_enqueue_scripts', 'ubuntugnome_enqueue_styles' );
 
 }
 
-function polymer_unregister_default_headers() {
+function ubuntugnome_unregister_default_headers() {
 		/**
 	 * Un-Register default Parent Theme headers for the child theme.
 	 * @since 0.1
@@ -88,7 +88,7 @@ function polymer_unregister_default_headers() {
  * @param  string  $hex
  * @return string
  */
-function polymer_primary_color( $color ) {
+function ubuntugnome_primary_color( $color ) {
 	return $color ? $color : '349F8C';
 }
 
@@ -99,7 +99,7 @@ function polymer_primary_color( $color ) {
 * @access public
 * @return void
 */
-function polymer_enqueue_styles() {
+function ubuntugnome_enqueue_styles() {
 	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic');
 	wp_enqueue_style( 'googleFonts');
 }
